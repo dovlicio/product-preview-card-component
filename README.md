@@ -17,7 +17,7 @@
 
 ### Links
 
-- Live Site URL: [Solution online](https://dovlicio.github.io/recipe-page/)
+- Live Site URL: [Solution online](https://dovlicio.github.io/product-preview-card-component/)
 
 ## My process
 
