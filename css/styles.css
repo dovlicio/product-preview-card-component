@@ -32,6 +32,10 @@ body {
     background: var(--color-cream);
 }
 
+main {
+    align-self: center;
+}
+
 .card {
     margin: 2rem 1.5rem;
     display: grid;
@@ -41,6 +45,14 @@ body {
     border-radius: 10px;
     overflow: hidden;
     max-width: 345px;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 600px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 .image-container {
@@ -56,6 +68,12 @@ body {
 
 .card__content {
     margin: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card__content {
+        margin: 3rem;
+    }
 }
 
 .card__category {
@@ -75,6 +93,12 @@ body {
     margin: 1.2rem 0;
 }
 
+@media screen and (min-width: 768px) {
+    .card__heading {
+        margin: 2.4rem 0;
+    }
+}
+
 @media screen and (min-width: 375px) {
     .card__heading {
         font-size: 3.2rem;
@@ -85,6 +109,12 @@ body {
     line-height: 1.6;
     color: var(--color-gray);
     margin: 1.5rem 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card__description {
+        margin: 2.5rem 0 3rem;
+    }
 }
 
 .card__price {
@@ -116,6 +146,12 @@ body {
     margin: 1rem 0;
 }
 
+@media screen and (min-width: 768px) {
+    .card__form {
+        margin: 3rem 0 0;
+    }
+}
+
 .card__button {
     display: block;
     width: 100%;
@@ -127,6 +163,11 @@ body {
     line-height: 1.1;
     padding: 1.5rem 0;
     border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.card__button:hover {
+    background: var(--color-green-700);
 }
 
 .card__icon {
